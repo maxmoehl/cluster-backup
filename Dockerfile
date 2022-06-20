@@ -1,4 +1,4 @@
-ARG TAG=3.16.0
+ARG TAG=latest
 FROM alpine:${TAG}
 
 RUN apk add --no-cache borgbackup
