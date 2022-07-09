@@ -1,7 +1,3 @@
-ARG TAG=latest
-FROM alpine:${TAG}
+FROM docker.io/library/alpine:3
 
-RUN apk add --no-cache borgbackup
-
-ENTRYPOINT [ "borg" ]
-
+RUN apk add --no-cache borgbackup postgresql-client sqlite
